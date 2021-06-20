@@ -38,7 +38,7 @@ public  class  saida {
          int n2 =  10 ;
          n1 . ; // possue metidos de funcoes derivadas da POO
          n2 . ; // int normal de outras linguagens
-         / * * POO primitivos
+         /** POO primitivos
           * Dobro dobro
           * Desprezar desrespeito
           * Longo longo
