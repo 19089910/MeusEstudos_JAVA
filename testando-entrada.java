@@ -5,22 +5,22 @@ public class estutura {
 
         //TIPOS DE SCANNER E SEU USO
         System.out.print("informe um nome: ");
-        String Onome;
-        Onome = scan.nextLine();
-        /** String stringname = scanner.nextLine();
-         * Double doubleValor = scanner.nextDoubel();
-         * Fluat floatValor = scanner.nextFluat();
-         * Short shortValor = scanner.nextShort();
-         * Integer intValor = scanner.nextInt();
-         * Byte byteValor = scanner.nextByte();
-         * Boolean bool = scanner.nextBoolean();
+        String Onome = scan.nextLine();//scan.next para o programa e espera o usuario
+        /**String stringname     = scanner.nextLine();
+         * Character 'recebe(0)' = scanner.next().charAt(0);
+         * Double doubleValor    = scanner.nextDoubel();
+         * Fluat floatValor      = scanner.nextFluat();
+         * Short shortValor      = scanner.nextShort();
+         * Integer intValor      = scanner.nextInt();
+         * Byte byteValor        = scanner.nextByte();
+         * Boolean bool          = scanner.nextBoolean();
          */
         System.out.println(Onome);
         System.out.println("\n FIM DO PROGRMA\n");
 
         //TEST DO SCAN
         System.out.print("digite um valor que sera somado com 10: ");
-        Integer digitaAi = scan.nextInt();
+        int digitaAi = scan.nextInt();
         System.out.println(digitaAi + 10);
         System.out.println("\nFIM DO PROGRMA\n");
 
@@ -29,12 +29,14 @@ public class estutura {
         System.out.println(nome.charAt(0) + "-" + nome.charAt(1) + "-" + nome.charAt(2) + "-" + nome.charAt(3) + "-" + nome.charAt(4));
         System.out.println("\nFIM DO PROGRMA\n");
 
-        //converter valor em string
+        //converter valor em string: valueOf
         Float f = 10.0f;
         String.valueOf(f);// 10f e valor float
         String valorConvertido = String.valueOf(f);
         System.out.println(valorConvertido);
         System.out.println("\nFIM DO PROGRMA\n");
+
+        scan.close();//fecha a bilbiotec scanner
 
         //Poo vs type primitivos; a prova que java nao e so POO
         /*
