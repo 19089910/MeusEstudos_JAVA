@@ -7,15 +7,15 @@ public  class  saida {
          Varredura do scanner =  novo  scanner ( sistema . In); // = nome_variável tipo = novo tipo (entrar no sistema) / Nome_variável recebe tipo (sua função)
 
          Sistema . para fora . print ( " informe um nome: " );
-         seila = digitalizar . nextLine (); / * * String stringname = scanner.nextLine ();
+         seila = digitalizar . nextLine ();  String/** stringname = scanner.nextLine ();
                                    * Double doubleValor = scanner.nextDoubel ();
                                    * Fluat floatValor = scanner.nextFluat ();
                                    * Short shortValor = scanner.nextShort ();
                                    * Inteiro intValor = scanner.nextInt ();
                                    * Byte byteValor = scanner.nextByte ();
                                    * Boolean bool = scanner.nextBoolean ();
-                                * /
-         Sistema . para fora . println (seila);
+                                    */
+Sistema . para fora . println (seila)   ;  
         // teste
          Sistema . para fora . print ( " digite um valor: " );
          Integer digitaAi = scan . nextInt ();
