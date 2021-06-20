@@ -1,69 +1,53 @@
- /*tipos de comentaros */
-    /**
-     * texto
-     */
-    //ctl+alt+L
-    /*texto*/
-/*type bit
-    (valores quebrados/ racionais)
-    Bouble  64 (Double d = 10.0241864541485489421057484120468;)
-    Float   32 (Float f = 100.4185465184841231f;)
-    (inteiros)
-    Long    64 (Long l = 10165412021adsfasdfasdfasdfasdfasdfal;)
-    Int     32 (Integer i =100;)
-    Short   16 (Short S = 10;)
-    Byte    8 (Byte b = 10;)
-    Char    2 (character c = 'a')
-    String  ? (terterminado por mim)
-    Boolean ? (determinado pelo JVK se for true ou false)
- */
- public class OlaMundo {                      //ctl+alt+L = catenacao automatica da ide
-     public static void main(String[] args) {  //= psvm
-         System.out.println("olá, mundo!");    //= sout
+import  java.util.Scanner ; // biblioteca escan
 
+public  class  saida {
+     public  static  void  main ( String [] args ) {
+         String seila;
 
-         //VARIAVES
-         String nome = "Lucas";
-         Integer soma = 10 + 2;
+         Varredura do scanner =  novo  scanner ( sistema . In); // = nome_variável tipo = novo tipo (entrar no sistema) / Nome_variável recebe tipo (sua função)
 
-         System.out.println(nome);
-         System.out.println(soma);
+         Sistema . para fora . print ( " informe um nome: " );
+         seila = digitalizar . nextLine (); / * * String stringname = scanner.nextLine ();
+                                   * Double doubleValor = scanner.nextDoubel ();
+                                   * Fluat floatValor = scanner.nextFluat ();
+                                   * Short shortValor = scanner.nextShort ();
+                                   * Inteiro intValor = scanner.nextInt ();
+                                   * Byte byteValor = scanner.nextByte ();
+                                   * Boolean bool = scanner.nextBoolean ();
+                                * /
+         Sistema . para fora . println (seila);
+        // teste
+         Sistema . para fora . print ( " digite um valor: " );
+         Integer digitaAi = scan . nextInt ();
+         Sistema . para fora . println (digitaAi +  10 );
 
+         // index / char de uma string
+         Nome da string =  " lucas " ;
+         Sistema . para fora . println (nome . charAt ( 0 ) +  " - "  + nome . charAt ( 1 ) +  " - "
+                 + nome . charAt ( 2 ) +  " - "  + nome . charAt ( 3 ) +  " - "  + nome . charAt ( 4 ));
 
-         //USO DE MEMORIA DAS VARIAVES
-         System.out.println("Double: Max: " + Double.MAX_VALUE + " - Double: " +
-                 Double.MIN_VALUE);
-         System.out.println("Float: Max: " + Float.MAX_VALUE + " - Min: " +
-                 Float.MIN_VALUE);
-         System.out.println("Long: Max: " + Long.MAX_VALUE + " - Long: " +
-                 Long.MIN_VALUE);
-         System.out.println("Integer: Max: " + Integer.MAX_VALUE + " - Min: " +
-                 Integer.MIN_VALUE);
-         System.out.println("Short: Max: " + Short.MAX_VALUE + " - Min: " +
-                 Short.MIN_VALUE);
-         System.out.println("Byte: Max: " + Byte.MAX_VALUE + " - Min: " +
-                 Byte.MIN_VALUE);
+         // conversor valor em string
+         String . valueOf ( 10f ); // 10f e valor float
 
+         Float f =  10.0f ;
+         String valorConvertido =  String . valueOf (f);
+         Sistema . para fora . println (valorConvertido);
 
-         //OPERADORES JAVA
-         int numero = 10;
-         System.out.println(2 + numero);
-         System.out.println(numero - 8);
-         System.out.println(numero / 5);
-         System.out.println(numero % 3);//resto de uma divisao
-
-         System.out.println("uso de operadores");
-         int num = 10;
-         num *=2;//= num = num * 2
-         num=num+1; //num = 20 + 1/num= 21
-         System.out.println(num);
-         System.out.println("encremento e decremento");
-         //num=21
-         System.out.println(num++);//= /num=num+1/num+=1
-         System.out.println(num);
-         System.out.println(--num);//= num-1=num/1=-num
-         //num=21
-
+         // Poo vs type primitivos; a prova que java nao e so POO
+         Inteiro n1 =  10 ;
+         int n2 =  10 ;
+         n1 . ; // possue metidos de funcoes derivadas da POO
+         n2 . ; // int normal de outras linguagens
+         / * * POO primitivos
+          * Dobro dobro
+          * Desprezar desrespeito
+          * Longo longo
+          * Inteiro int
+          * Curto curto
+          * Byte byte
+          * Boolean boolean
+          * Cher cher
+          * String nao Tem pois e diferente * /
 
      }
  }
