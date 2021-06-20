@@ -15,15 +15,15 @@ public  class  saida {
                                    * Byte byteValor = scanner.nextByte ();
                                    * Boolean bool = scanner.nextBoolean ();
                                     */
-Sistema . para fora . println (seila)   ;  
+          Sistema.out.println (seila);
         // teste
-         Sistema . para fora . print ( " digite um valor: " );
+         Sistema.out.print ( " digite um valor: " );
          Integer digitaAi = scan . nextInt ();
-         Sistema . para fora . println (digitaAi +  10 );
+         Sistema.out.println (digitaAi +  10 );
 
          // index / char de uma string
          Nome da string =  " lucas " ;
-         Sistema . para fora . println (nome . charAt ( 0 ) +  " - "  + nome . charAt ( 1 ) +  " - "
+         Sistema.out.println (nome . charAt ( 0 ) +  " - "  + nome . charAt ( 1 ) +  " - "
                  + nome . charAt ( 2 ) +  " - "  + nome . charAt ( 3 ) +  " - "  + nome . charAt ( 4 ));
 
          // conversor valor em string
@@ -31,7 +31,7 @@ Sistema . para fora . println (seila)   ;
 
          Float f =  10.0f ;
          String valorConvertido =  String . valueOf (f);
-         Sistema . para fora . println (valorConvertido);
+         Sistema.out.println (valorConvertido);
 
          // Poo vs type primitivos; a prova que java nao e so POO
          Inteiro n1 =  10 ;
