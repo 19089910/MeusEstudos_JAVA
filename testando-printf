@@ -1,105 +1,75 @@
-/**
- * texto
- * /
- * // ctl + alt + L
- * / * texto * /
- * / * tipo bit
- * (valores quebrados / racionais)
- * Problema 64 (Double d = 10.0241864541485489421057484120468;)
- * Float 32 (Flutuante f = 100,4185465184841231f;)
- * (inteiros)
- * Long 64 (Long l = 10165412021adsfasdfasdfasdfasdfasdfal;)
- * Int 32 (inteiro i = 100;)
- * Short 16 (Curto S = 10;)
- * Byte 8 (Byte b = 10;)
- * Caracter 2 (caractere c = 'a')
- * String ? (terterminado por mim)
- * Boleano ? (determinado pelo JVK se for verdadeiro ou falso)
- */
-public class estutura {//ctl + alt + L = catenacao automatica da ide
+import java.util.Locale;//biblioteca de localizacao
 
-    public static void main(String[] args) {// = psvm
-        System.out.println("olá, mundo!");    // = sout
+public class estutu {
+
+    private String aula() {
+        double x = 4.5574546568;
+
+        //BIBLIOTECA LOCALE; PRINT FORMATACAO""
+        System.out.printf("%.2f%n", x);//soutf=formatacao(,%.2f= quantas casa depois da virgula)
+        //(\n),(%n)=quebra de linha
+        //res:4,56; sendo (,)nao(.), isso e pelo padao do pc que e br, para ser padrao US:
+        Locale.setDefault(Locale.US);//teclado padrao us
+        System.out.printf("%.2f%n", x);
+        //res:4.56
+
+        //CONTETENACAO DIFERENTE COM PRINTF
+        System.out.printf("resultado = %.2f metros%n", x);//onde o %.2f formata a variavel X e o faz marcadores/chama sem o uso do +
+        //exercicio marcadores %f=pontoFlutuante;%d=inteiro;%s=testo
+        String nome = "maria";
+        Integer idade = 31;
+        double renda = 4000.0;
+        System.out.printf("%s tem %d anos e ganha R$ %.2f reasi", nome, idade, renda);
+        return "\nFIM DO PROGRAMA\n";
+    }
+
+    private String exercicio() {
+        String product1 = "Computer";
+        String product2 = "Office desk";
+
+        Integer age = 30;
+        Integer code = 5290;
+        Character gender = 'F';
+        //ERRO:Double price1 ,price2 ,measure = 2100.0, 650.50, 53.234567;
+        Double price1 = 2100.0;
+        Double price2 = 650.50;
+        Double measure = 53.234567;
+
+        //System.out.printf("products:%n%s which price is $ %.2f%n%s which price is $ %.2f%n%nRecord: %d years old, code %d and gender: %s%n%nMeasue with eight decimal places: %.8f%nRouded (three decimal places): %.3f%nUS decimal point: %.3f", product1, price1, product2, price2, age , code, gender, measure, measure, measure);
+        System.out.printf("products:%n%s which price is $ %.2f%n", product1, price1);
+        System.out.printf("%s which price is $ %.2f%n", product2, price2);
+
+        System.out.printf("%nRecord: %d years old, code %d and gender: %s%n", age, code, gender);
+
+        System.out.printf("%nMeasue with eight decimal places: %.8f%n", measure);
+        System.out.printf("Rouded (three decimal places): %.3f%n", measure);
+        Locale.setDefault(Locale.US);
+        System.out.printf("US decimal point: %.3f", measure);
+        return "\nFIM DO PROGRAMA\n";
+    }
+
+    //CASTING
+    private String casting() {
+        int a, b;
+        double resultado, resultado1;
+
+        a = 5;
+        b = 2;
+
+        resultado = a / b;// sendo a b int, resultado mesmo sendo double sera ingnorado valor .0 por questoes de memoria
+        resultado1 = (double) a / b;//para identificar que o resultado sera double, assim CASTING: CONVERSAO EXPLICITA DOS VALORES
+        System.out.printf(resultado + "%n" + resultado1);
+        return "\nFIM DO PROGRAMA\n";
+    }
 
 
-        // VARIAVES
-        String nome = "Lucas";
-        Integer soma = 10 + 2;
+    public static void main(String[] args) {
+        estutu print = new estutu();
 
-        System.out.println(nome);
-        System.out.println(soma);
-
-
-        // USO DE MEMÓRIA DAS VARIAVES
-        System.out.println("Duplo: Máx:" + Double.MAX_VALUE + "-Duplo:" +
-                Double.MIN_VALUE);
-        System.out.println("Float: Max:" + Float.MAX_VALUE + "-Min:" +
-                Float.MIN_VALUE);
-        System.out.println("Long: Max: " + Long.MAX_VALUE + "-Long:" +
-                Long.MIN_VALUE);
-        System.out.println("Inteiro: Máx: " + Integer.MAX_VALUE + "-Mín:" +
-                Integer.MIN_VALUE);
-        System.out.println("short:Máx:" + Short.MAX_VALUE + "-Min:" +
-                Short.MIN_VALUE);
-        System.out.println("Byte:Max:" + Byte.MAX_VALUE + "-Min:" +
-                Byte.MIN_VALUE);
-
-
-        // OPERADORES JAVA
-        int numero = 10;
-        System.out.println(2 + numero);
-        System.out.println(numero - 8);
-        System.out.println(numero / 5);
-        System.out.println(numero % 3);// resto de uma divisão
-
-        //USO DE OPERADORES
-        System.out.println("uso de operadores");
-        int num = 10;
-        num *= 2; // = num = num * 2
-        num = num + 1; // num = 20 + 1 / num = 21
-        System.out.println(num);
-        //INCREMENTO E DECREMENTO
-        System.out.println("incremento e decremento");
-        // num = 21
-        System.out.println(num++); // = / num = num + 1 / num + = 1
-        System.out.println(num);
-        System.out.println(-num); // = num-1 = num / 1 = -num
-        // num = 21
-
-        //FUNCOES DE MATEMATICA
-        Double x = 3.0;
-        Double y = 4.0;
-        Double z = -5.0;
-        Double A, B, C;
-
-        /**A = Math.sqrt(x);    //A recebe a raiz quadrada de x
-         * B = Math.pow(x, y);  //A recebe o resultado de x elevado a y
-         * A = Math.abs(x);     //A recebe o valor absoluto de x*/
-
-        A = Math.sqrt(x);
-        B = Math.sqrt(y);
-        C = Math.sqrt(25.0);
-        System.out.println("Raiz quadrada de " + x + " = " + A);
-        System.out.println("Raiz quadrada de " + y + " = " + B);
-        System.out.println("Raiz quadrada de 25 = " + C);
-        System.out.println("Raiz quadrada de " + x + " = " + A);
-        System.out.println("Raiz quadrada de " + y + " = " + B);
-        System.out.println("Raiz quadrada de 25 = " + C);
-        A = Math.pow(x, y);
-        B = Math.pow(x, 2.0);
-        C = Math.pow(5.0, 2.0);
-        System.out.println(x + " elevado a " + y + " = " + A);
-        System.out.println(x + " elevado ao quadrado = " + B);
-        System.out.println("5 elevado ao quadrado = " + C);
-        A = Math.abs(y);
-        B = Math.abs(z);
-        System.out.println("Valor absoluto de " + y + " = " + A);
-        System.out.println("Valor absoluto de " + z + " = " + B);
-        //OBS: MAIORES INFORMACOES :java.lang.Math
-        //exercico fassa bascara
-        /*delta = Math.pow(b, 2.0) - 4*a*c;
-        x1 = (-b + Math.sqrt(delta)) / (2.0 * a);
-        x2 = (-b - Math.sqrt(delta)) / (2.0 * a);*/
-
+        System.out.println(print.aula());
+        System.out.println(print.exercicio());
+        System.out.println(print.casting());
     }
 }
+
+
