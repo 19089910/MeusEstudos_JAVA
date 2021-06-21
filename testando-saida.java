@@ -65,6 +65,7 @@ public class estutura {//ctl + alt + L = catenacao automatica da ide
         System.out.println(numero>5 && 20==20);//boolean todas as condicional para ser verdadeira
         System.out.println(numero<5 || 20==20);//boolean apenas uma das condicional para ser verdadeira
         System.out.println(!(numero ==20));//boolean inverte o resultado do bool 
+        
         //USO DE OPERADORES
         System.out.println("uso de operadores");
         int num = 10;
