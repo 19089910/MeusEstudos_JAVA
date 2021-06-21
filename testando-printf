@@ -1,5 +1,4 @@
 import java.util.Locale;//biblioteca de localizacao
-
 public class estutu {
 
     private String aula() {
