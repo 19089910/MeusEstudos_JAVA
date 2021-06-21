@@ -24,6 +24,17 @@ public class estutura {
         System.out.println(digitaAi + 10);
         System.out.println("\nFIM DO PROGRMA\n");
 
+        //ERRO DE PRIMITIVOS SEGUIDO DE NEXTLINE
+        int x;
+        String s1, s2, s3;
+        x = scan.nextInt();//EX:30(enter)
+        scan.nextLine();//o que consome o enter
+        s1 = scan.nextLine();//seria consumido por enter
+        s2 = scan.nextLine();
+        s3 = scan.nextLine();
+        System.out.println("DADOS DIGITADOS:"+x+"\n"+s1+"\n"+s2+"\n"+s3+"\n");
+        System.out.println("\nFIM DO PROGRMA\n");
+
         //index/charAt de uma string
         String nome = "lucas";
         System.out.println(nome.charAt(0) + "-" + nome.charAt(1) + "-" + nome.charAt(2) + "-" + nome.charAt(3) + "-" + nome.charAt(4));
@@ -59,3 +70,4 @@ public class estutura {
          * String  nao Tem pois e diferente*/
     }
 }
+
