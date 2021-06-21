@@ -1,4 +1,5 @@
 public class funcoes {//ctrl + b = esolicacao de funcao/posibilidades de funcao
+    //FUNCAO 
     public int testsoma(int a, int b) {
         return a+b;
     }
@@ -25,7 +26,8 @@ public class funcoes {//ctrl + b = esolicacao de funcao/posibilidades de funcao
     public Float decimal(Float x, Float y, Float z){
         return (((x + y) * x) / z);
     }
-
+    
+    //RUN
     public static void main(String[] args) {
         funcoes aquelaLA = new funcoes();
         System.out.println(aquelaLA.testsoma(10,5));
@@ -40,7 +42,7 @@ public class funcoes {//ctrl + b = esolicacao de funcao/posibilidades de funcao
         System.out.println(fu.decimal(2f, 4f, 2f ));
 
 
-        //funcoes da estring
+        //FUNCOES STRING
         String str= "  curso java    ";
 
         System.out.println(str.charAt(5));
