@@ -56,7 +56,15 @@ public class estutura {//ctl + alt + L = catenacao automatica da ide
         System.out.println(numero - 8);
         System.out.println(numero / 5);
         System.out.println(numero % 3);// resto de uma divisão
-
+        System.out.println(numero > 5);//boolean maior 
+        System.out.println(numero < 20);//boolean menor
+        System.out.println(numero <= 10);//boolean maior ou igual
+        System.out.println(numero >= 10);//boolean menor ou igual
+        System.out.println(numero == 10);//boolean igual
+        System.out.println(numero != 20);//boolean diferente
+        System.out.println(numero>5 && 20==20);//boolean todas as condicional para ser verdadeira
+        System.out.println(numero<5 || 20==20);//boolean apenas uma das condicional para ser verdadeira
+        System.out.println(!(numero ==20));//boolean inverte o resultado do bool 
         //USO DE OPERADORES
         System.out.println("uso de operadores");
         int num = 10;
